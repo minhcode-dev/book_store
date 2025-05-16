@@ -1,0 +1,335 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 7px 15px;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 7px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Actions Links */
+.actions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+/* Category Section */
+.category {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 10px;
+}
+
+.category-header h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.view-all {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.book-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.book-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.book {
+    flex: 0 0 calc(100% / 5);
+    scroll-snap-align: start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.book h4 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.book p {
+    font-size: 14px;
+    color: #888;
+}
+.book-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+
+
+.cart-form {
+    margin: 0;
+}
+
+.add-to-cart-btn {
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s ease;
+}
+
+.book:hover .add-to-cart-btn {
+    display: inline-block;
+}
+
+
+/* Footer */
+.simple-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.simple-footer .footer-about {
+    margin-bottom: 15px;
+}
+
+.simple-footer .footer-about h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.simple-footer .footer-about p {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.simple-footer .footer-links {
+    margin: 20px 0;
+}
+
+.simple-footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.simple-footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.simple-footer .footer-social {
+    margin-bottom: 15px;
+}
+
+.simple-footer .footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.simple-footer .footer-copy {
+    font-size: 13px;
+}
+.actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    user-select: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 200px; /* Đặt chiều rộng cố định rõ ràng */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap; /* Không xuống dòng */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 45px;
+}
+form input[type="text"],
+form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.container {
+    max-width: 400px;
+    margin: 80px auto; /* căn giữa ngang + cách top */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+

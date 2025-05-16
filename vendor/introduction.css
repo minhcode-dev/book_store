@@ -1,0 +1,73 @@
+/* Đặt nền và kiểu chữ cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thiết lập các yếu tố của phần giới thiệu */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color: #4CAF50;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Định dạng phần mô tả và các đoạn văn */
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Liên kết email */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+/* Thêm một chút bóng cho các phần tiêu đề */
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tạo hiệu ứng cho các phần mô tả */
+.about-section p {
+    transition: all 0.3s ease;
+}
+
+
+/* Thêm một chút khoảng cách cho footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
